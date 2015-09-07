@@ -37,9 +37,11 @@ class EmphasisTest < Minitest::Test
     assert_equal html, words.add_emphasis
   end
 
-end
+  def test_it_leaves_unordered_lists_alone
+    markdown = "* I am an unordered list"
+    html = "* I am an unordered list"
+    words = Emphasis.new(markdown)
+    assert_equal html, words.add_emphasis
+  end
 
-#is there emphasis in a header? in the paragraph?
-#in a list? (split all words and each with index |char, index|
-#is there emphasis along WITH strong?
-#is there one asterisk or two? (split on double)
+end

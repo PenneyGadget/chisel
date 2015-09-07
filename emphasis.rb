@@ -27,9 +27,15 @@ class Emphasis
   def add_emphasis
     if markdown.include?("**")
       markdown
-    else
+    elsif (markdown.count "*") > 1
       render_emphasis_tags
+    else
+      markdown
     end
   end
 
 end
+
+markdown = "This is a *test*."
+emphasis = Emphasis.new(markdown)
+puts emphasis.add_emphasis
