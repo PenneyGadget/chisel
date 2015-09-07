@@ -29,6 +29,6 @@ class Paragraph
 
 end
 
-markdown = "This is a test."
-paragraph = Paragraph.new(markdown)
-puts paragraph.add_p_tags
+# markdown = "This is a test."
+# paragraph = Paragraph.new(markdown)
+# puts paragraph.add_p_tags

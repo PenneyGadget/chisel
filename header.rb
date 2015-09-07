@@ -26,6 +26,6 @@ class Header
 
 end
 
-markdown = "## This is a test."
-header = Header.new(markdown)
-puts header.render_header_tags
+# markdown = "## This is a test."
+# header = Header.new(markdown)
+# puts header.render_header_tags

@@ -15,6 +15,6 @@ class Strong
 
 end
 
-markdown = "This is a **test**."
-strong = Strong.new(markdown)
-puts strong.add_strong_tags
+# markdown = "This is a **test**."
+# strong = Strong.new(markdown)
+# puts strong.add_strong_tags

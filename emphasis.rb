@@ -36,6 +36,6 @@ class Emphasis
 
 end
 
-markdown = "This is a *test*."
-emphasis = Emphasis.new(markdown)
-puts emphasis.add_emphasis
+# markdown = "This is a *test*."
+# emphasis = Emphasis.new(markdown)
+# puts emphasis.add_emphasis
